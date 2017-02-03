@@ -1,0 +1,11 @@
+<h2>My dashboard</h2>
+<div class="row m-2">
+  <%= form_for @shout do |f| %>
+    <%= f.text_field :body, placeholder: 'Shout content here' %>
+    <%= f.submit 'Shout' %>
+  <% end %>
+</div>
+
+<div class="row">
+  <%= render @shouts %>
+</div>

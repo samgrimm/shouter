@@ -1,0 +1,6 @@
+<div class="col-3">
+  <div class="card">
+    <h2><%= link_to shout.user.username, shout.user %> <small>shouted</small></h2>
+    <p><%= shout.body %> - <%= link_to time_ago_in_words(shout.created_at), shout%> ago</p>
+  </div>
+</div>
